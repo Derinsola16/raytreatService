@@ -10,9 +10,30 @@
 
   <meta content="" name="keywords">
 
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+      $(function () {
+
+        $('form').on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            url: 'contact.php',
+            data: $('form').serialize(),
+            success: function () {
+              alert('form was submitted');
+            }
+          });
+
+        });
+
+      });
+    </script>
+
   <!-- Favicons -->
   <link href="assets/img/ray.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -728,7 +749,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="contact.php" method="POST" class="php-email-form row gy-4" id="contact-form">
+            <form class="php-email-form row gy-4" id="contact-form">
               <!-- <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
               <!-- <div class="row gy-4"> -->
 
