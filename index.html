@@ -728,9 +728,9 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/form.php" method="POST" class="php-email-form" id="contact-form">
+            <form action="forms/form.php" method="POST" class="php-email-form row gy-4" id="contact-form">
               <!-- <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
-              <div class="row gy-4">
+              <!-- <div class="row gy-4"> -->
 
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
@@ -749,14 +749,14 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <!-- <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
                   <button type="submit">Send Message</button>
                 </div>
 
-              </div>
+              <!-- </div> -->
             </form>
 
           </div>
@@ -884,17 +884,17 @@
           message: form.elements.message.value
       };
  
-      const errors = validate(formValues, constraints);
+      // const errors = validate(formValues, constraints);
  
-      if (errors) {
-        event.preventDefault();
-        const errorMessage = Object
-            .values(errors)
-            .map(function (fieldValues) { return fieldValues.join(', ')})
-            .join("\n");
+      // if (errors) {
+      //   event.preventDefault();
+      //   const errorMessage = Object
+      //       .values(errors)
+      //       .map(function (fieldValues) { return fieldValues.join(', ')})
+      //       .join("\n");
  
-        alert(errorMessage);
-      }
+      //   alert(errorMessage);
+      // }
     }, false);
  </script>
  
