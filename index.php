@@ -780,7 +780,7 @@ if (!empty($_POST)) {
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="POST" class="php-email-form row gy-4" id="contact-form">
+            <form action="" method="POST" class="php-email-form row gy-4" id="contact-form">
            <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> 
               <!-- <div class="row gy-4"> -->
 
