@@ -52,7 +52,7 @@
 
     if (mail($toEmail, $emailSubject, $body, $headers)) {
         // header('Location: thank-you.html');
-        echo 'Email Sent'
+        echo 'Email Sent';
     } else {
         $errorMessage = 'Oops, something went wrong. Please try again later';
     }

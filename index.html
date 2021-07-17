@@ -11,32 +11,34 @@
   <meta content="" name="keywords">
 
   <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script>
-      $(function () {
+  <script>
+    $(function () {
 
-        $('form').on('submit', function (e) {
+      $('form').on('submit', function (e) {
 
-          e.preventDefault();
+        e.preventDefault();
 
-          $.ajax({
-            type: 'post',
-            url: 'contact.php',
-            data: $('form').serialize(),
-            success: function () {
-              alert('form was submitted');
-            }
-          });
-
+        $.ajax({
+          type: 'post',
+          url: location.hostname + `/contact.php`,
+          data: $('form').serialize(),
+          success: function () {
+            alert('form was submitted');
+          }
         });
 
       });
-    </script>
+
+    });
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/ray.png" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -83,14 +85,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h1 data-aos="fade-up mb-2"><b>Manufacturing <br/> a limitless range of <br/>affordable medical devices</b> </h1>
-  
-            <p data-aos="fade-up">Raytreat  , specializes in medical equipment development for  Health infrastructural advancement in the African Continent.</p>
+            <h1 data-aos="fade-up mb-2"><b>Manufacturing <br /> a limitless range of <br />affordable medical
+                devices</b> </h1>
+
+            <p data-aos="fade-up">Raytreat , specializes in medical equipment development for Health infrastructural
+              advancement in the African Continent.</p>
             <!-- <p data-aos="fade-up" data-aos-delay="600">Our goal is to become the leading innovative system of health care in Africa; targeting to end preventable deaths of newborns and children,  and reducing  neonatal mortality to at least as low as 12 per 1,000 live births.</p>
             <p data-aos="fade-up" data-aos-delay="800">We share in the responsibility to keep health care expenses as low as possible when we can without compromising the quality of care.</p> -->
             <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Learn More</span> 
+              <a href="#about"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Learn More</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
@@ -114,9 +119,14 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h3>Who Are We</h3>
-              <p>The decaying health infrastructure in the African continent is  due to its dependence on international communities for medical infrastructures. Raytreat is piloting the development of standard, Locally manufactured medical devices using disruptive innovation to design world class medical devices.</p>
+              <p>The decaying health infrastructure in the African continent is due to its dependence on international
+                communities for medical infrastructures. Raytreat is piloting the development of standard, Locally
+                manufactured medical devices using disruptive innovation to design world class medical devices.</p>
               <p>
-                We are team of trained specialists who collaborate to discover creative solutions to health problems, including launching remote health care services in under served locations. We are dedicated to being the region's finest health care experts, promoting patient-centered care that enables hospitals and clinics to deliver exceptional service.
+                We are team of trained specialists who collaborate to discover creative solutions to health problems,
+                including launching remote health care services in under served locations. We are dedicated to being the
+                region's finest health care experts, promoting patient-centered care that enables hospitals and clinics
+                to deliver exceptional service.
               </p>
             </div>
           </div>
@@ -147,7 +157,8 @@
             <div class="box" data-aos="fade-up" data-aos-delay="200">
               <img src="assets/img/values-1.png" class="img-fluid" alt="">
               <h3>Affordable medical equipment</h3>
-              <p>We rapidly innovate, simplifying complex medical devices for under served communities where patients die of preventable and curable health challenges.</p>
+              <p>We rapidly innovate, simplifying complex medical devices for under served communities where patients
+                die of preventable and curable health challenges.</p>
             </div>
           </div>
 
@@ -155,15 +166,17 @@
             <div class="box" data-aos="fade-up" data-aos-delay="400">
               <img src="assets/img/values-2.png" class="img-fluid" alt="">
               <h3>Improved medical devices</h3>
-              <p>Raytreat is strengthening health care delivery for the sickest in our community by providing  world class health infrastructures, ensuring a better quality of life for the world's population.</p>
+              <p>Raytreat is strengthening health care delivery for the sickest in our community by providing world
+                class health infrastructures, ensuring a better quality of life for the world's population.</p>
             </div>
           </div>
 
           <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="600">
               <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>Solving Global  health challenges</h3>
-              <p>Our devices run on renewable energy sources, harnessing energy from sunlight and wind, we need to work together to make the planet a better place to live in.</p>
+              <h3>Solving Global health challenges</h3>
+              <p>Our devices run on renewable energy sources, harnessing energy from sunlight and wind, we need to work
+                together to make the planet a better place to live in.</p>
             </div>
           </div>
 
@@ -171,7 +184,8 @@
             <div class="box" data-aos="fade-up" data-aos-delay="600">
               <img src="assets/img/values-3.png" class="img-fluid" alt="">
               <h3>We adopt IOT control technology </h3>
-              <p>Providing doctors with advanced real-time monitoring and control interface that enables them to provide patient-centered care at the hospital and at home.</p>
+              <p>Providing doctors with advanced real-time monitoring and control interface that enables them to provide
+                patient-centered care at the hospital and at home.</p>
             </div>
           </div>
 
@@ -197,7 +211,8 @@
             <div class="service-box icon-color">
               <i class="ri-heart-pulse-fill icon"></i>
               <h3>Passion</h3>
-              <p>We are motivated by a burning desire to make health care on the African continent more affordable and accessible.</p>
+              <p>We are motivated by a burning desire to make health care on the African continent more affordable and
+                accessible.</p>
             </div>
           </div>
 
@@ -248,7 +263,7 @@
     </section>
     <!-- End Services Section -->
 
-     <!-- ======= Product Section ======= -->
+    <!-- ======= Product Section ======= -->
     <section id="product" class="about">
 
       <div class="container" data-aos="fade-up">
@@ -257,17 +272,22 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
               <h3> The product</h3>
-              <p>The Neocare photo-therapy unit is a safe and effective treatment for newborn jaundice and is recommended for preterm infants as a first-line treatment. It's safe for infants to be exposed to, and has none of the serious side effects associated with competing biological drug therapies. Neocare photo-therapy is ideal for remote care because of its light weight and portability and additionally it is solar powered with 12 hours battery life.</p>
-             <ul>
-              <li>Portable photo-therapy unit </li>
-              <li>IOT enabled</li>
-              <li>Solar powered</li>
-              <li>Features</li>
-              <li>Wavelength: 460nm</li>
-              <li>Irradiance: 30 mW/cm2 per nm</li>
-             </ul>
+              <p>The Neocare photo-therapy unit is a safe and effective treatment for newborn jaundice and is
+                recommended for preterm infants as a first-line treatment. It's safe for infants to be exposed to, and
+                has none of the serious side effects associated with competing biological drug therapies. Neocare
+                photo-therapy is ideal for remote care because of its light weight and portability and additionally it
+                is solar powered with 12 hours battery life.</p>
+              <ul>
+                <li>Portable photo-therapy unit </li>
+                <li>IOT enabled</li>
+                <li>Solar powered</li>
+                <li>Features</li>
+                <li>Wavelength: 460nm</li>
+                <li>Irradiance: 30 mW/cm2 per nm</li>
+              </ul>
               <div class="text-center text-lg-start">
-                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                <a href="#"
+                  class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Read More</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -277,7 +297,10 @@
 
           <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
             <!-- <img src="assets/img/about.jpg" class="img-fluid" alt=""> -->
-            <iframe width="600" height="415" src="https://www.youtube.com/embed/c-F-XX64hBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="600" height="415" src="https://www.youtube.com/embed/c-F-XX64hBo"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
 
         </div>
@@ -606,7 +629,8 @@
               <div class="member-info">
                 <h4>Oluwatomilola Mustapha</h4>
                 <span>Product lead & Co-founder</span>
-                <p>Winner of global social entrepreneur award 2020 and Top 30 under 30 global change makers by opportunity desk.</p>
+                <p>Winner of global social entrepreneur award 2020 and Top 30 under 30 global change makers by
+                  opportunity desk.</p>
               </div>
             </div>
           </div>
@@ -614,7 +638,9 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQGy0co8sDWZ3w/profile-displayphoto-shrink_400_400/0/1616664490565?e=1631145600&v=beta&t=d_bhB5nGAOOdSc44GGXRdcrGxC-4G2HMzVFy9QcBbnw" class="img-fluid" alt="">
+                <img
+                  src="https://media-exp1.licdn.com/dms/image/C4D03AQGy0co8sDWZ3w/profile-displayphoto-shrink_400_400/0/1616664490565?e=1631145600&v=beta&t=d_bhB5nGAOOdSc44GGXRdcrGxC-4G2HMzVFy9QcBbnw"
+                  class="img-fluid" alt="">
                 <!-- <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -625,11 +651,12 @@
               <div class="member-info">
                 <h4>Dahunsi Elizabeth</h4>
                 <span>Co-founder & Product designer</span>
-                <p>Winner of global social entrepreneur award 2020, a product designer and product manager at top tech companies in Nigeria.</p>
+                <p>Winner of global social entrepreneur award 2020, a product designer and product manager at top tech
+                  companies in Nigeria.</p>
               </div>
             </div>
           </div>
-<!-- 
+          <!-- 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
@@ -720,7 +747,7 @@
                 <div class="info-box">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>Mayfair gardens estate, lekki <br> epe express way. <br/>Lagos Nigeria</p>
+                  <p>Mayfair gardens estate, lekki <br> epe express way. <br />Lagos Nigeria</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -753,29 +780,29 @@
               <!-- <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?> -->
               <!-- <div class="row gy-4"> -->
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+              </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
-                </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+              </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+              </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
-                </div>
+                <button type="submit">Send Message</button>
+              </div>
 
               <!-- </div> -->
             </form>
@@ -814,13 +841,15 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-            <span> RayTreat Medical Technologies</span>
+              <span> RayTreat Medical Technologies</span>
             </a>
-            <p>We share in the responsibility to keep health care expenses as low as possible when we can without compromising the quality of care.</p>
+            <p>We share in the responsibility to keep health care expenses as low as possible when we can without
+              compromising the quality of care.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a target="_blank" href="https://www.instagram.com/raytreatmedtech/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a target="_blank" href="https://www.instagram.com/raytreatmedtech/" class="instagram"><i
+                  class="bi bi-instagram bx bxl-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
             </div>
           </div>
@@ -850,8 +879,8 @@
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>
-              Mayfair gardens estate, <br>Lekki epe express way. <br/>Lagos Nigeria
-               <br><br>
+              Mayfair gardens estate, <br>Lekki epe express way. <br />Lagos Nigeria
+              <br><br>
               <strong>Phone:</strong> +234 813 096 7129<br>
               <strong>Email:</strong> Raytreatservices@gmail.com<br>
             </p>
@@ -863,7 +892,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
@@ -879,45 +909,45 @@
 
   <script>
     const constraints = {
-        name: {
-            presence: { allowEmpty: false }
-        },
-        email: {
-            presence: { allowEmpty: false },
-            email: true
-        },
-        subject: {
-          presence: { allowEmpty: false}
-        },
-        message: {
-            presence: { allowEmpty: false }
-        }
+      name: {
+        presence: { allowEmpty: false }
+      },
+      email: {
+        presence: { allowEmpty: false },
+        email: true
+      },
+      subject: {
+        presence: { allowEmpty: false }
+      },
+      message: {
+        presence: { allowEmpty: false }
+      }
     };
- 
+
     const form = document.getElementById('contact-form');
- 
+
     form.addEventListener('submit', function (event) {
       const formValues = {
-          name: form.elements.name.value,
-          email: form.elements.email.value,
-          subject: form.elements.subject.value,
-          message: form.elements.message.value
+        name: form.elements.name.value,
+        email: form.elements.email.value,
+        subject: form.elements.subject.value,
+        message: form.elements.message.value
       };
- 
+
       // const errors = validate(formValues, constraints);
- 
+
       // if (errors) {
       //   event.preventDefault();
       //   const errorMessage = Object
       //       .values(errors)
       //       .map(function (fieldValues) { return fieldValues.join(', ')})
       //       .join("\n");
- 
+
       //   alert(errorMessage);
       // }
     }, false);
- </script>
- 
+  </script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
