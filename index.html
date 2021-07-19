@@ -15,18 +15,19 @@
     $(function () {
 
       $('form').on('submit', function (e) {
-
+        const form = this
         e.preventDefault();
 
         $.ajax({
           type: 'post',
-          url: location.hostname + `/contact.php`,
+          url: `/contact.php`,
           data: $('form').serialize(),
           success: function () {
-            alert('form was submitted');
+            form.querySelector('.sent-message').classList.add('d-block');
+            
           }
         });
-
+        // location.hostname 
       });
 
     });
@@ -155,7 +156,7 @@
 
           <div class="col-lg-3">
             <div class="box" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/values-1.png" class="img-fluid" alt="">
+              <img src="assets/img/Group3.png" class="img-fluid" alt="">
               <h3>Affordable medical equipment</h3>
               <p>We rapidly innovate, simplifying complex medical devices for under served communities where patients
                 die of preventable and curable health challenges.</p>
@@ -164,7 +165,7 @@
 
           <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/img/values-2.png" class="img-fluid" alt="">
+              <img src="assets/img/Group4.png" class="img-fluid" alt="">
               <h3>Improved medical devices</h3>
               <p>Raytreat is strengthening health care delivery for the sickest in our community by providing world
                 class health infrastructures, ensuring a better quality of life for the world's population.</p>
@@ -173,16 +174,15 @@
 
           <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="600">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
-              <h3>Solving Global health challenges</h3>
-              <p>Our devices run on renewable energy sources, harnessing energy from sunlight and wind, we need to work
-                together to make the planet a better place to live in.</p>
+              <img src="assets/img/Group2.png" class="img-fluid" alt="">
+              <h3>Solving Global  health challenges</h3>
+              <p>Our devices run on renewable energy sources, harnessing energy from sunlight and wind, we need to work together to make the planet a better place to live in.</p>
             </div>
           </div>
 
           <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="600">
-              <img src="assets/img/values-3.png" class="img-fluid" alt="">
+              <img src="assets/img/Group1.png" class="img-fluid" alt="">
               <h3>We adopt IOT control technology </h3>
               <p>Providing doctors with advanced real-time monitoring and control interface that enables them to provide
                 patient-centered care at the hospital and at home.</p>
