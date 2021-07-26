@@ -432,6 +432,7 @@ section {
   background: url(../img/hero-bg.png) top center no-repeat rgba(76, 175, 80, 0.1);
   background-size: cover;
   position: relative;
+  opacity: 0.5;
 }
 
 .hero {
@@ -441,6 +442,7 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 
 .hero h1 {
